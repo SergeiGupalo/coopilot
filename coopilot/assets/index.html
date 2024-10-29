@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link href="https://fonts.cdnfonts.com/css/canela-text-trial" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/jquery.formstyler.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="mobiles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- <div class="header__top">
+            <div class="header__logo">
+              <a href="#">
+                <img src="./images/logo.svg" alt="LOGO">
+              </a>
+            </div>
+            <div id="burger" class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            
+            <div class="header__nav">
+              <nav id="menu" class="menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Work</a></li>
+                  <li><a href="#">Benefits</a></li>
+                  <li><a href="#">How we do it</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Plans</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+                <div class="burger__contacts">
+                  <a class="menu__call" href="#">Book a call</a>
+                  <a class="menu__contact" href="#">Contact us →</a>
+                </div>
+              </nav>
+            </div>
+          </div> -->
+
+        <div class="header__top">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./images/logo.svg" alt="LOGO">
+                </a>
+            </div>
+            <div class="burger-icon" id="burger">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__nav">
+
+                <nav id="menu" class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Benefits</a></li>
+                        <li><a href="#">How we do it</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Контакти -->
+            <div class="header__contacts">
+                <a class="book" href="">Book a call</a>
+                <a class="us" href="">Contact us -></a>
+            </div>
+        </div>
+        <!-- Мобільне меню -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Benefits</a></li>
+                    <li><a href="#">How we do it</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+                <div class="burger__contacts">
+                    <a class="menu__call" href="#">Book a call</a>
+                    <a class="menu__contact" href="#">Contact us</a>
+                </div>
+            </nav>
+            <div class="close-menu" id="closeMenu">x</div>
+        </div>
+    </header>
+
+    <section class="top">
+        <div class="top__title">
+            <h1>An entire industrial design team with a single subscription.</h1>
+            <h6>Everything you need to tackle a new project, meet a deadline, or bring your team's designers with new
+                ideas.</h6>
+            <button type="button" class="button_btn">See plans</button>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero__nav">
+            <div class="hero__nav-number">
+                01
+            </div>
+            <div class="hero__nav-name">
+                <img src="./images/work.svg" alt="work">
+                Work
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slider__intro">
+                <div class="slider-item">
+                    <img src="./images/1.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="./images/2.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="./images/3.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="./images/4.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="./images/5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="plans">
+        <div class="plans__nav">
+            <div class="plans__nav-number">
+                05
+            </div>
+            <div class="plans__nav-text">
+                Let's make the most of your next project, together.
+            </div>
+            <div class="plans__nav-name">
+                <img src="./images/work.svg" alt="Plans">
+                Plans
+            </div>
+        </div>
+        <div class="plans__menu">
+            <button class="active" id="monthly">Monthly</button>
+            <button id="quarterly">Quarterly<span>-10%</span></button>
+            <button id="annual">Annual<span>-20%</span></button>
+        </div>
+        <div class="plans__intro-wrapper">
+            <div class="plans__intro">
+                <!-- Перший вложений блок-->
+                <div class="plans__item">
+                    <div class="plans__item-title">
+                        <h2> Concept
+                            Design</h2>
+                    </div>
+                    <div class="plans__item-price">
+                        <div id="concept-original-price" class="original-price" style="display: none;">$4.500</div>
+                        <div id="concept-price">$4.500 <span>/month</span></div>
+                    </div>
+                    <div class="plans__item-subtitle">Great for innovators.</div>
+                    <button class="plans__btn first-btn">Get started-></button>
+                    <div class="plans__item-like">
+                        <ul>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                <strong>80 hours per month</strong>
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Research & Benchmarking
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">User Journey
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Concept Development
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Product Architecture
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Unlimited Team Members
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Software Licences
+                            </li>
+                            <li class="disabled">
+                                <img src="./images/plans_2.svg" alt="">
+                                DFM
+                            </li>
+                            <li class="disabled">
+                                <img src="./images/plans_2.svg" alt="">
+                                Prototyping
+                            </li>
+                            <li class="disabled">
+                                <img src="./images/plans_2.svg" alt="">
+                                Simultaneous Designers
+                            </li>
+                            <li class="disabled">
+                                <img src="./images/plans_2.svg" alt="">
+                                Photorealistic Rendering
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Другий вложений блок-->
+                <div class="plans__item">
+                    <div class="plans__item-title">
+                        <h2>Product
+                            Development</h2>
+                    </div>
+                    <div class="plans__item-price">
+                        <div id="product-original-price" class="original-price" style="display: none;">$6.000</div>
+                        <div id="product-price">$6.000<span>/month</span></div>
+                    </div>
+                    <div class="plans__item-subtitle">Best for growth teams and growing companies.</div>
+                    <button class="plans__btn">Get started-></button>
+                    <div class="plans__item-like">
+                        <ul>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                <strong>120 hours per month</strong>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Research & Benchmarking
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">User Journey
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Concept Development
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Product Architecture
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Unlimited Team Members
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Software Licences
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                DFM
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Prototyping
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Simultaneous Designers
+                            </li>
+                            <li class="disabled">
+                                <img src="./images/plans_2.svg" alt="">
+                                Photorealistic Rendering
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Третій вложений блок-->
+                <div class="plans__item offer">
+                    <div class="best-offer">
+                        <img src="./images/si.svg" alt="Left icon" class="offer-icon-left">
+                        Best Offer
+                        <img src="./images/si.svg" alt="Right icon" class="offer-icon-right">
+                    </div>
+                    <div class="plans__item-title">
+                        <h2>End-to-End
+                            Services</h2>
+                    </div>
+                    <div class="plans__item-price">
+                        <div id="services-original-price" class="original-price" style="display: none;">$7.500</div>
+                        <div id="services-price">$7.500 <span>/month</span></div>
+                    </div>
+                    <div class="plans__item-subtitle">Best for teams with
+                        high volume.</div>
+                    <button class="plans__btn">Get started-></button>
+                    <div class="plans__item-like">
+                        <ul>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                <strong>180 hours per month</strong>
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Research & Benchmarking
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">User Journey
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Concept Development
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Product Architecture
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Unlimited Team Members
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Software Licences
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                DFM
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Prototyping
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Simultaneous Designers
+                            </li>
+                            <li>
+                                <img src="./images/plans_1.svg" alt="">
+                                Photorealistic Rendering
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Четвертий вложений блок-->
+                <div class="plans__item intro-end">
+
+                    <div class="plans__item-title">
+                        <h2> Enterprise</h2>
+                    </div>
+                    <div class="plans__item-subtitle">Do you need specialized talent or a larger workforce?</div>
+                    <div class="plans__item-text">Ask for our tailored solutions for large companies.</div>
+                    <button class="plans__btn">Let’s talk-></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__title">
+            <h2>Let’s have a <span>conversation!</span></h2>
+        </div>
+        <div class="footer__content">
+            <div class="content__left">
+                <div class="content__mail">
+                    <input type="email" placeholder="Enter email addres" class="footer__email">
+                    <button class="footer__btn">Contact me</button>
+                </div>
+                <div class="content__checkbox">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Would you like to receive our Newsletter with offers and upcoming
+                        services?</label>
+                </div>
+                <div class="footer__bottom">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="content__right">
+                <div class="social__intro">
+                    <a href="#"><img src="./images/twitter.svg" alt="twiter"></a>
+                    <a href="#"><img src="./images/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="./images/email.svg" alt="email"></a>
+                </div>
+                <div class="footer__menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">WORK</a></li>
+                        <li><a href="#">BENEFITS</a></li>
+                        <li><a href="#">HOW WE DO IT</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">PLANS</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                    <div class="footer__logo">
+                        <img src="./images/footer-logo.svg" alt="logo">
+                    </div>
+                    <div class="footer__logo-mobile">
+                        <img src="./images/logo-2.svg" alt="">
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
+<script src="./js/jquery.fancybox.min.js"></script>
+<script src="./js/jquery.formstyler.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./main.js"></script>
+
+</html>

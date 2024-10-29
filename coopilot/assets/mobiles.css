@@ -1,0 +1,410 @@
+/* Адаптивні стилі для екранів до 768px */
+@media (max-width: 768px) {
+
+  /* Ховати десктопне меню */
+  .header__nav {
+    display: none;
+  }
+
+  /* Показати бургер-іконку */
+  .burger-icon {
+    display: block;
+  }
+
+  /* Ховати контакти на мобільних пристроях */
+  .header__contacts {
+    display: none;
+  }
+
+  .menu {
+    border: none;
+  }
+
+  .burger__contacts .active {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .menu ul {
+    display: block;
+  }
+
+  #mobileMenu.active {
+    display: block;
+  }
+
+  #mobileMenu {
+    padding-top: 200px;
+    right: 0;
+  }
+
+  .top__title h1 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .top__title h6 {
+    font-size: 16px;
+    line-height: 20px;
+    width: 294px;
+  }
+
+  .hero__nav-name {
+    font-size: 20px;
+  }
+
+  .hero__nav-name img {
+    width: 17px;
+    height: 17px;
+  }
+
+  .hero__nav-number {
+    padding: 4px 22px 12px 12px;
+    font-size: 20px;
+    height: 29px;
+    line-height: 21px;
+  }
+
+  .plans__nav-text {
+    width: 255px;
+    font-size: 45px;
+    right: 50px;
+    top: 50px;
+  }
+
+  .plans__nav-number {
+    font-size: 18px;
+    line-height: 19px;
+    height: 26px;
+    padding: 4px 20px 5px 10px;
+  }
+
+  .plans__nav-name {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .plans__nav-name img {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* .plans__nav-number{
+    padding: 4px 18px 5px 12px;
+    font-size: 20px;
+    line-height: 21px;
+    height: 26px;
+  }
+  .plans__nav-name{
+    font-size: 20px;
+    line-height: 21px;
+  }
+  .plans__nav-text{
+    right: 20px;
+    font-size: 45px;
+    margin-top: 60px;
+    width: 309px;
+  }
+  .plans__nav-name img{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    right: 50px;
+  }
+  .plans__menu{
+    display: grid;
+    width: 300px;
+    border-radius: 29px;
+  }
+  .plans__menu button{
+    width: 300px;
+  } */
+  /* .plans__intro {
+    display: flex;
+    overflow-x: auto;
+    /* Додаємо горизонтальний скрол */
+  /* scroll-snap-type: x mandatory; */
+  /* Для прив'язки блоків до видимої області */
+  /* -webkit-overflow-scrolling: touch; */
+  /* Плавний скрол на мобільних пристроях */
+  /* margin-bottom: 20px; */
+  /* } */
+
+  /* .plans__item {
+    scroll-snap-align: start;
+    /* Прив'язуємо кожен блок до початку скролу */
+  /* flex: none; */
+  /* Не дозволяємо блокам змінювати розмір */
+  /* min-width: 100%; */
+  /* Кожен блок займає 100% ширини екрану */
+  /* box-sizing: border-box; */
+  /* Враховуємо padding в розрахунок ширини */
+  /* margin-right: 10px; */
+  /* Простір між блоками */
+  /* } */
+
+  /* Оформлення кнопок вибору періоду */
+  /* .plans__menu {
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-around; */
+  /* Розташування кнопок рівномірно */
+  /* } */
+
+  /* .plans__menu button {
+    padding: 10px 20px;
+    width: auto; */
+  /* Ширина кнопок адаптується під текст */
+  /* } */
+
+  /* Додаткові стилі для мобільних елементів */
+  /* .plans__item-title h2 {
+    font-size: 24px;
+  } */
+
+  /* .plans__item-price {
+    font-size: 28px;
+  }
+
+  .plans__item-subtitle,
+  .plans__item-text {
+    font-size: 14px;
+  } */
+
+  /* .plans__btn {
+    width: 80%; */
+  /* Кнопка займає 80% ширини */
+  /* font-size: 14px;
+  } */
+
+  /* .best-offer {
+    top: -10px;
+    font-size: 12px;
+  }
+
+  .plans__item:last-child {
+    margin-right: 0;
+  } */
+  /* ---- Варіант №_2 ----*/
+  .plans__menu {
+    width: 80%;
+    margin: 35px auto;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    top: 25px;
+    position: relative;
+  }
+
+  .plans__menu button {
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Контейнер для тарифних планів */
+  .plans__intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    padding-bottom: 180px;
+  }
+  .plans__intro {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Дозволяємо горизонтальну прокрутку */
+    -webkit-overflow-scrolling: touch; /* Плавна прокрутка на мобільних пристроях */
+    gap: 15px;
+    padding: 10px;
+    width: 100vw; /* Ширина контейнера для прокрутки */
+    margin-bottom: 20px;
+    user-select: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    flex-grow: 1;
+    scrollbar-width: none;
+  }
+  .plans__intro::-webkit-scrollbar {
+    display: none; /* Прибираємо скроллбар для браузерів WebKit */
+  }
+  .plans__item {
+    min-width: 100%; /* Робить кожен блок шириною в 100% від ширини контейнера */
+    scroll-snap-align: start; /* Задає позицію для "snap scrolling" */
+    flex-shrink: 0; /* Забороняє зміну розміру елементів при прокрутці */
+  }
+  
+  .intro-end {
+    position: absolute;
+    bottom: -95px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 10;
+    text-align: center;
+  }
+  
+  /* Останній блок (Enterprise) буде під тарифними планами */
+  .plans__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .plans__item--enterprise {
+    width: 100%; /* Зробимо останній блок на всю ширину */
+    margin-top: 20px; /* Відступ зверху */
+  }
+  
+  /* Приховуємо горизонтальну смугу прокрутки */
+  .plans__intro::-webkit-scrollbar {
+    display: none; /* Приховуємо смугу прокрутки для браузерів WebKit */
+  }
+  
+  .plans__intro {
+    cursor: grab !important; /* Початковий стан курсора */
+  }
+  
+  /* Щоб блок "Enterprise" був знизу */
+  .plans-wrapper .plans__item--enterprise {
+    margin-top: auto; /* Автоматично розміщує останній блок внизу */
+  }
+
+  .plans__item-title h2 {
+    font-size: 22px;
+    padding: 20px 0;
+  }
+
+  .plans__item-price {
+    font-size: 26px;
+  }
+
+  .plans__item-subtitle,
+  .plans__item-text {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .plans__btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .best-offer {
+    font-size: 12px;
+    padding: 5px;
+    width: 100px;
+  }
+
+  .plans__item-like {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+
+  .plans__item-like li {
+    padding: 8px 0;
+  }
+
+  .offer-icon-left,
+  .offer-icon-right {
+    width: 10px;
+    height: 10px;
+  }
+  .intro-end {
+    margin-top: auto; /* Це переміщує блок вниз */
+    padding: 20px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+
+  .footer {
+    padding: 50px 10px 0px 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .footer__content {
+    display: block;
+  }
+
+  .footer__title {
+    width: 300px;
+  }
+
+  .content__mail {
+    width: 350px;
+    display: grid;
+    width: 85%;
+  }
+
+  .content__right {
+    top: 0;
+  }
+  .footer__bottom{
+    width: 200px;
+    left: -5px;
+  }
+
+  .footer__btn {
+    top: 110px;
+    left: 0;
+    width: 200px;
+  }
+
+  .footer__email {
+    width: 90%;
+  }
+
+  .content__checkbox {
+    margin-top: -20px;
+  }
+
+  .footer__title h2 {
+    font-size: 45px;
+  }
+
+  .footer__title h2 span {
+    font-size: 45px;
+  }
+
+  .social__intro {
+    right: 0;
+    top: -75px;
+  }
+
+  .footer__menu {
+    top: 0;
+  }
+
+  .footer__menu ul {
+    display: none;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  .footer__logo {
+    top: 0;
+  }
+
+  .footer__logo-mobile {
+    display: block;
+    position: absolute;
+    top: -65px;
+    left: 205px;
+  }
+
+  .content__checkbox {
+    width: 300px;
+  }
+
+}
